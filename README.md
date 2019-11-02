@@ -6,6 +6,12 @@
 
 [여기](https://blog.naver.com/pjt3591oo/221695855740)에서 자세한 설정을 볼 수 있습니다.
 
+## dependencie modules install
+
+```bash
+$ npm i # or npm install, yarn
+```
+
 ## file
 
 ```bash
