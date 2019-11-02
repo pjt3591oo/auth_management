@@ -1,4 +1,4 @@
-# session management sample
+# session management 
 
 * file
 * mysql
