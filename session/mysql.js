@@ -13,6 +13,12 @@ const options = {
   password: 'password',
   database: 'session',
   charset: 'utf8mb4_bin',
+
+  // Whether or not to automatically check for and clear expired sessions:
+  clearExpired: true,
+  checkExpirationInterval: 900000,
+  expiration: 86400000,
+
   schema: {
       tableName: 'sessions',
       columnNames: {
