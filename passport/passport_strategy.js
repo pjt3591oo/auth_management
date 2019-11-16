@@ -7,7 +7,7 @@ module.exports = () => {
     done(null, user); 
   });
 
-  passport.deserializeUser((user, done) => { // 매개변수 user는 serializeUser의 done의 인자 user를 받은 것
+  passport.deserializeUser((user, done) => { // 세션이 있는 유저가 API 요청하면 호출됨
     console.log('deserializeUser', user)
     done(null, user); // 두번째 인자로 전달된 데이터는 req.user에 저장됨
   });
