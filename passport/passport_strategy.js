@@ -9,7 +9,7 @@ module.exports = () => {
 
   passport.deserializeUser((user, done) => { // 매개변수 user는 serializeUser의 done의 인자 user를 받은 것
     console.log('deserializeUser', user)
-    done(null, user); // 여기의 user가 req.user가 됨
+    done(null, user); // 두번째 인자로 전달된 데이터는 req.user에 저장됨
   });
 
   passport.use(new LocalStrategy({

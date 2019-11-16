@@ -3,6 +3,7 @@ const router = express.Router();
 
 const passport = require('passport')
 
+// 세션확인
 router.get('/', (req, res) => {
   return res.status(200).json({...req.session, ...req.user})
 })
